@@ -1,0 +1,87 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  height: 3vh;
+  box-shadow: #000000;
+}
+
+.logo-container img {
+  margin-top: 2vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 5vh;
+  width: 25vh;
+  flex: 1;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links ul li {
+  margin-right: 10vh;
+}
+
+.links ul li:last-child {
+  margin-right: 0;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.links ul li a:hover {
+  color: #2f6ad9;
+}
+
+.links ul li a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: #2f6ad9;
+}
+
+.buttoncontainer {
+  display: flex;
+}
+
+.join-button {
+  cursor: pointer;
+  margin-right: 5vh;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 19px;
+  margin-left: 10px;
+}
+
+.join-button:hover {
+  background-color: #2f6ad9;
+  color: black;
+}
